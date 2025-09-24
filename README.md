@@ -10,11 +10,11 @@ int main() {
     cout << "Masukkan waktu t: ";
     cin >> t;
 
-    // Hitung n sesuai flowchart
+    // Hitung n sesuai flowchart yang sudah saya buat
     int n = (t - 25) % 103;
     if (n < 0) n += 103; // agar selalu positif
 
-    // Buat tabel warna persis
+    
     vector<string> lights(103, "Red");
     for (int i = 0; i <= 19; i++) lights[i] = "Green";
     for (int i = 20; i <= 22; i++) lights[i] = "Yellow";
